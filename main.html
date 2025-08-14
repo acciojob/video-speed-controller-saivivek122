@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Video Speed Scrubber</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="wrapper">
-    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
-    <div class="speed">
-      <div class="speed-bar">1×</div>
-    </div>
+  <div class="player">
+	  <video id="video" class="viewer" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
   </div>
 
-<script  src="./script.js">
+	<div class="controls">
+			<progress id="progress" value="0" min="0" ></progress>
+		
+	</div>
+	<button class="player_button toggle" id="player_button">► </button>
+	<button id="backward" value="2">«2</button>
+	<button id="forward" value="2">2»</button>
+
+	<input id="volume" type="range" name="volume" min="0" max="1" step="0.05" value="1">
+	<input id="playbackspeed" type="range" name="playbackspeed" min="0.5" max="1" step="0.1" value="1">
+
+<script  src="script.js">
   //Your code goes here
 </script>
 </body>

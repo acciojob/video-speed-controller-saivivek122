@@ -1,2 +1,19 @@
 
 /* Your CSS Code here. */
+
+.progress{
+  width: 30%;
+  background-color: grey;
+  height: 20px;
+}
+
+.progress-filled{
+  width: 30%;
+  background-color: green;
+  height: 18px;
+}
+
+#video{
+  width: 30%;
+  height: 30%;
+}
